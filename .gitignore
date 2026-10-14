@@ -19,9 +19,9 @@ __pycache__/
 # Dataset files
 data/
 
-# Generated machine learning models
-models/
-*.joblib
+# Only publish the trained classifier
+models/*
+!models/support_ticket_classifier.joblib
 *.pkl
 
 # Operating system files

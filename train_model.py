@@ -49,6 +49,8 @@ print(f"Validation Accuracy: {accuracy:.2%}")
 
 print("\nClassification Report:")
 print(classification_report(y_val, y_pred, zero_division=0))
+print("\nValidation Confusion Matrix:")
+print(pd.crosstab(y_val, y_pred))
 
 # Create a DataFrame containing validation results
 results = val_df[["text", "label"]].copy()

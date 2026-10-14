@@ -1,0 +1,14 @@
+
+import pandas as pd
+
+df = pd.read_json("data/train.jsonl", lines=True)
+
+print(df.head())
+
+print(df.shape)
+
+print(df.columns)
+
+print(df.isnull().sum())
+
+print(df["label"].value_counts())
